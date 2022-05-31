@@ -3,7 +3,8 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const Components = require('../src/components.json');
-//const config = require('./config');
+const config = require('./config');
+
 const webpackConfig = {
   mode: 'production',
   entry: Components,
@@ -16,10 +17,10 @@ const webpackConfig = {
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    //alias: config.alias,
+    alias: config.alias,
     modules: ['node_modules']
   },
-  //externals: config.externals,
+  externals: config.externals,
   performance: {
     hints: false
   },
@@ -31,7 +32,7 @@ const webpackConfig = {
       {
         test: /\.(jsx?|babel|es6)$/,
         include: process.cwd(),
-        exclude: /node_modules/,
+        exclude: config.jsexclude,
         loader: 'babel-loader'
       },
       {
@@ -43,6 +44,18 @@ const webpackConfig = {
           }
         }
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: path.posix.join('static', '[name].[hash:7].[ext]')
+        }
+      }
     ]
   },
   plugins: [
