@@ -16,8 +16,8 @@ externals = [Object.assign({
 exports.externals = externals;
 
 exports.alias = {
-  main: path.resolve(__dirname, '../src'),
-  packages: path.resolve(__dirname, '../packages'),
+  'main': path.resolve(__dirname, '../src'),
+  packages: path.resolve(__dirname, '../src/packages'),
   'yxb-ui': path.resolve(__dirname, '../')
 };
 
