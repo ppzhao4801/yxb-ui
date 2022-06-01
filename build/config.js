@@ -6,7 +6,7 @@ var Components = require('../src/components.json');
 var externals = {};
 
 Object.keys(Components).forEach(function(key) {
-  externals[`xyb-ui/src/packages/${key}`] = `yxb-ui/lib/${key}`;
+  externals[`yxb-ui/src/packages/${key}`] = `yxb-ui/lib/${key}`;
 });
 
 externals = [Object.assign({
@@ -16,7 +16,7 @@ externals = [Object.assign({
 exports.externals = externals;
 
 exports.alias = {
-  'main': path.resolve(__dirname, '../src'),
+  src: path.resolve(__dirname, '../src'),
   packages: path.resolve(__dirname, '../src/packages'),
   'yxb-ui': path.resolve(__dirname, '../')
 };
@@ -28,4 +28,4 @@ exports.vue = {
   amd: 'vue'
 };
 
-exports.jsexclude = /node_modules|utils\/popper\.js|utils\/date\.js/;
+exports.jsexclude = /node_modules/;
