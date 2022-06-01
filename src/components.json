@@ -1,4 +1,4 @@
 {
-  "alert": "src/packages/alert/index.js",
-  "button": "src/packages/button/index.js"
+  "alert": "src/components/alert/index.js",
+  "button": "src/components/button/index.js"
 }

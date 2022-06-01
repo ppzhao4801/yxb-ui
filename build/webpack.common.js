@@ -15,7 +15,7 @@ module.exports = {
     filename: 'yxb-ui.common.js',
     chunkFilename: '[id].js',
     libraryExport: 'default',
-    library: 'yxb',
+    library: 'YXB',
     libraryTarget: 'commonjs2'
   },
   resolve: {

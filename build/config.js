@@ -6,7 +6,13 @@ var Components = require('../src/components.json');
 var externals = {};
 
 Object.keys(Components).forEach(function(key) {
-  externals[`yxb-ui/src/packages/${key}`] = `yxb-ui/lib/${key}`;
+  externals[`yxb-ui/src/components/${key}`] = `yxb-ui/lib/components/${key}`;
+});
+
+var utilsList = fs.readdirSync(path.resolve(__dirname, '../src/utils'));
+utilsList.forEach(function(file) {
+  file = path.basename(file, '.js');
+  externals[`yxb-ui/src/utils/${file}`] = `yxb-ui/lib/utils/${file}`;
 });
 
 externals = [Object.assign({
@@ -17,7 +23,6 @@ exports.externals = externals;
 
 exports.alias = {
   src: path.resolve(__dirname, '../src'),
-  packages: path.resolve(__dirname, '../src/packages'),
   'yxb-ui': path.resolve(__dirname, '../')
 };
 
