@@ -16,9 +16,6 @@ const install = function(Vue, opts = {}) {
     Vue.component(component.name, component);
   });
 
-  Vue.use(InfiniteScroll);
-  Vue.use(Loading.directive);
-
   Vue.prototype.$YXB = {
     size: opts.size || '',
     zIndex: opts.zIndex || 2000
