@@ -1,8 +1,9 @@
 {
   "name": "yxb-ui",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Component Library for Vue.js.",
+  "main": "lib/yxb-ui.common.js",
+  "unpkg": "lib/index.js",
   "scripts": {
     "build:component": "webpack --config build/webpack.component.js",
     "build:common": "webpack --config build/webpack.common.js",
