@@ -6,8 +6,6 @@
     <yxb-button type="warning">警告按钮</yxb-button>
     <yxb-button type="danger">危险按钮</yxb-button>
     <yxb-input/>
-    <YxbInput/>
-    <ElInput/>
   </div>
 </template>
 
