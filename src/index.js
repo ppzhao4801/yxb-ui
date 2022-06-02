@@ -2,10 +2,12 @@
 
 import Alert from "./components/alert/index.js"
 import Button from "./components/button/index.js"
+import Input from "./components/input/index.js"
 
 const components = [
   Alert,
-  Button
+  Button,
+  Input
 ];
 
 const install = function(Vue, opts = {}) {
@@ -29,5 +31,6 @@ export default {
   version: '1.0.0',
   install,
   Alert,
-  Button
+  Button,
+  Input
 };
