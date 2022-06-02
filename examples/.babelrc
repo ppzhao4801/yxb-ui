@@ -1,12 +1,13 @@
 {
-    // "plugins": [
-    //     [
-    //         "import",
-    //         {
-    //             "libraryName": "yxb-ui",
-    //             "libraryDirectory":"lib/components",
-    //             "style":true
-    //         }
-    //     ]
-    // ]
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "yxb-ui",
+                "libraryDirectory":"lib/components",
+                "styleLibraryDirectory":"lib/styles",
+                // "style": (name) => `lib/styles/${name}.css`
+            }
+        ]
+    ]
 }

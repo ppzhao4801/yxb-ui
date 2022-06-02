@@ -14,7 +14,7 @@ const webpackConfig = {
     filename: '[name].[hash:7].js',
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json', '.css'],
     alias: {
       src: path.resolve(__dirname, '../src'),
       examples: path.resolve(__dirname, './examples/src'),
