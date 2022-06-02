@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import App from './src/index.vue';
-import Button from 'yxb-ui/lib/components/button';
-debugger
-Vue.use(Button);
+import YXB from 'yxb-ui';
+Vue.use(YXB);
 
 new Vue({ // eslint-disable-line
   render: h => h(App)
