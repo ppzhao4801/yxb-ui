@@ -24,14 +24,10 @@ module.exports = function(md){
             path.resolve(__dirname ,"../../", 'examples', `${sourceFile}.vue`),
             'utf-8'
           )
+          debugger
         }
-        const demos={
-          "button/basic": () => import('../../examples/button/basic.vue'),
-        }
-        console.log("demos",demos)
-        debugger
         if (!source) throw new Error(`Incorrect source file: ${sourceFile}`)
-        return `<Demo :demos="demos" source="${encodeURIComponent(
+        return `<Demo source="${encodeURIComponent(
           highlight(source, 'vue')
         )}" path="${sourceFile}" raw-source="${encodeURIComponent(
           source

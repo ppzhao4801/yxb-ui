@@ -1,4 +1,5 @@
 
+import demos from "@src/examples"
 import YXBUI from "yxb-ui"
 import "yxb-ui/lib/styles/index.css"
 import Demo from './components/demo/index.vue'
@@ -10,4 +11,6 @@ export default ({
 }) => {
   Vue.use(YXBUI)
   Vue.component("Demo",Demo)
+  console.log(demos)
+  Vue.prototype.$demos=demos
 }

@@ -3,7 +3,6 @@ const head = require("./config/head")
 const nav =  require("./config/nav")
 const sidebar =  require("./config/sidebars")
 const mdPlugin = require("./config/plugins")
-const MarkdownTransform  = require('./plugins/markdown-transform')
 module.exports={
   lang: 'zh-CN',
   title: '用心保管理端UI',
@@ -20,6 +19,7 @@ module.exports={
     sidebar
   },
   alias: {
+    '@src': path.resolve(__dirname, '../'),
     '@public': path.resolve(__dirname, 'public'),
     'yxb-ui': path.resolve(__dirname, '../../'),
   },
@@ -30,6 +30,5 @@ module.exports={
     }
   },
   plugins:[
-    //MarkdownTransform()
   ]
 }
