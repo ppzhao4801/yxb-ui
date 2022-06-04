@@ -18,6 +18,7 @@ module.exports={
   },
   alias: {
     '@public': path.resolve(__dirname, 'public'),
+    'yxb-ui': path.resolve(__dirname, '../../'),
   },
   enhanceAppFiles: path.resolve(__dirname, 'client.js'),
   markdown:{

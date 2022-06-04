@@ -10,6 +10,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "prism-theme-vars": "^0.2.3"
+  },
   "devDependencies": {
     "consola": "^2.15.3",
     "escape-html": "^1.0.3",
@@ -17,8 +20,5 @@
     "markdown-it-container": "^3.0.0",
     "prismjs": "^1.28.0",
     "vuepress": "^1.9.7"
-  },
-  "dependencies": {
-    "prism-theme-vars": "^0.2.3"
   }
 }
