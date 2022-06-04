@@ -8,6 +8,10 @@ description: 页面的描述
 
 <yxb-button>水电费</yxb-button>
 <yxb-input />
-::: demo sd
-sdf
+
+# 按钮
+:::demo 按钮
+
+design/button
+
 :::
