@@ -3,6 +3,7 @@ const head = require("./config/head")
 const nav =  require("./config/nav")
 const sidebar =  require("./config/sidebars")
 const mdPlugin = require("./config/plugins")
+const MarkdownTransform  = require('./plugins/markdown-transform')
 module.exports={
   lang: 'zh-CN',
   title: '用心保管理端UI',
@@ -25,7 +26,10 @@ module.exports={
   enhanceAppFiles: path.resolve(__dirname, 'client.js'),
   markdown:{
     extendMarkdown: (md) => {
-      //mdPlugin(md)
+      mdPlugin(md)
     }
-  } 
+  },
+  plugins:[
+    //MarkdownTransform()
+  ]
 }

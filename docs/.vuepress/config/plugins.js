@@ -25,6 +25,11 @@ module.exports = function(md){
             'utf-8'
           )
         }
+        const demos={
+          "button/basic": () => import('../../examples/button/basic.vue'),
+        }
+        console.log("demos",demos)
+        debugger
         if (!source) throw new Error(`Incorrect source file: ${sourceFile}`)
         return `<Demo :demos="demos" source="${encodeURIComponent(
           highlight(source, 'vue')

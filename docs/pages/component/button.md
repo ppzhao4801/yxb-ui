@@ -3,6 +3,14 @@ title: Button
 lang: en-US
 ---
 
+<script>
+  const demos={
+      "button/basic": () => import('../../examples/button/basic.vue'),
+  }
+</script>
+<template>
+<div>demos:{{demos}}</div>
+</template>
 # Button
 
 Commonly used button.
