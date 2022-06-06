@@ -3,6 +3,8 @@
 import Alert from "./components/alert/index.js"
 import Button from "./components/button/index.js"
 import Input from "./components/input/index.js"
+import Divider from "./components/divider/index.js"
+import CollapseTransition from "./components/collapse-transition/index.js"
 
 const components = [
   Alert,
@@ -32,5 +34,7 @@ export default {
   install,
   Alert,
   Button,
-  Input
+  Input,
+  Divider,
+  CollapseTransition
 };

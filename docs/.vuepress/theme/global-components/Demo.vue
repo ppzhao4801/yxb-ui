@@ -1,32 +1,35 @@
 <template>
     <div>
         <ClientOnly>
-            <p text="sm" v-html="decodedDescription" />
+            <p text="sm" v-html="decodeURIComponent(description)" />
             <div class="example">
                 <Example :file="path" :demo="formatPathDemos[path]" />
+               
+                <div class="op-btns">
+
+                </div>
+                
+                <SourceCode v-show="sourceVisible" :source="source" />
+               
             </div>
-            <div v-html="decoded"></div>
         </ClientOnly>
     </div>
 </template>
 <script>
-import Example from './demo/example'
+import Example from './demo/example.vue'
+import SourceCode from './demo/source-code.vue'
 import demos from "@src/examples"
 export default {
     name: 'Demo',
-    components:{Example},
+    components:{Example,SourceCode},
     props:{
-        source: {
-            type: String,
-            required: true
-        },
         description:{
             type: String,
             required: true 
         },
-        file: {
+        source: {
             type: String,
-            required: false,
+            required: true
         },
         path: {
             type: String,
@@ -39,14 +42,11 @@ export default {
     },
     data() {
         return {
-            decodedDescription:null,
-            decoded: null,
+            sourceVisible:true,
             formatPathDemos:demos
         }
     },
     mounted(){
-        this.decoded = decodeURIComponent(this.source)
-        this.decodedDescription = decodeURIComponent(this.description)
     }
 }
 </script>

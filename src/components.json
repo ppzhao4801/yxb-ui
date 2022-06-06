@@ -1,5 +1,7 @@
 {
   "alert": "src/components/alert/index.js",
   "button": "src/components/button/index.js",
-  "input": "src/components/input/index.js"
+  "input": "src/components/input/index.js",
+  "divider": "src/components/divider/index.js",
+  "collapse-transition": "src/components/collapse-transition/index.js"
 }
