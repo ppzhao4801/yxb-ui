@@ -24,14 +24,12 @@ module.exports = function(md){
             path.resolve(__dirname ,"../../", 'examples', `${sourceFile}.vue`),
             'utf-8'
           )
-          debugger
         }
         if (!source) throw new Error(`Incorrect source file: ${sourceFile}`)
-        return `<Demo source="${encodeURIComponent(
-          highlight(source, 'vue')
-        )}" path="${sourceFile}" raw-source="${encodeURIComponent(
-          source
-        )}" description="${encodeURIComponent(localMd.render(description))}">`
+        return `<Demo source="${encodeURIComponent(highlight(source, 'vue'))}" 
+                      path="${sourceFile}" 
+                      raw-source="${encodeURIComponent(source)}" 
+                      description="${encodeURIComponent(localMd.render(description))}">`
       } else {
         return '</Demo>'
       }
