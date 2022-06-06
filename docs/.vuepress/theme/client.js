@@ -9,6 +9,5 @@ export default ({
   console.log(options)
   console.log(router)
   console.log(siteData)
-  debugger
   Vue.use(YXBUI)
 }
