@@ -36,13 +36,12 @@ export default {
             decodedDescription:null,
             decoded: null,
             demo:null,
-            formatPathDemos:null
+            formatPathDemos:demos
         }
     },
     mounted(){
         this.decoded = decodeURIComponent(this.source)
         this.decodedDescription = decodeURIComponent(this.description)
-        this.formatPathDemos=demos
         this.demo=this.formatPathDemos[this.path]
     }
 }
