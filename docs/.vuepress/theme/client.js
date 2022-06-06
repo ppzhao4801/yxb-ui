@@ -1,4 +1,4 @@
-import YXBUI from "yxb-ui"
+import YXBUI from "yxb-ui/src"
 import "yxb-ui/lib/styles/index.css"
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数

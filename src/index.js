@@ -4,12 +4,18 @@ import Alert from "./components/alert/index.js"
 import Button from "./components/button/index.js"
 import Input from "./components/input/index.js"
 import Divider from "./components/divider/index.js"
+import Icon from "./components/icon/index.js"
+import Tooltip from "./components/tooltip/index.js"
 import CollapseTransition from "./components/collapse-transition/index.js"
 
 const components = [
   Alert,
   Button,
-  Input
+  Input,
+  Divider,
+  Icon,
+  Tooltip,
+  CollapseTransition
 ];
 
 const install = function(Vue, opts = {}) {
@@ -36,5 +42,7 @@ export default {
   Button,
   Input,
   Divider,
+  Icon,
+  Tooltip,
   CollapseTransition
 };

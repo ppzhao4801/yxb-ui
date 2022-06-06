@@ -10,6 +10,7 @@ module.exports={
   base:"/docs/",
   dest:"dist",
   temp:".vuepress/.temp",
+  cache:".vuepress/.cache",
   host:"127.0.0.1",
   post:"8080",
   head,
