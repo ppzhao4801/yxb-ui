@@ -11,6 +11,7 @@ export default ({
 }) => {
   Vue.use(YXBUI)
   Vue.component("Demo",Demo)
+  debugger
   console.log(demos)
   Vue.prototype.$demos=demos
 }

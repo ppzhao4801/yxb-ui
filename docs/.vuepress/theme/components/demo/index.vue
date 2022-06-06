@@ -45,8 +45,6 @@ export default {
 
         this.formatPathDemos=this.$demos
         this.demo=this.formatPathDemos[this.path]
-         debugger
-
     }
 }
 </script>

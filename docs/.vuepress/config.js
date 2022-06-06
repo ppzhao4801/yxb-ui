@@ -15,6 +15,7 @@ module.exports={
   head,
   themeConfig:{
     logo: '/images/logo.svg',
+    smoothScroll: true,
     nav,
     sidebar
   },
@@ -23,7 +24,7 @@ module.exports={
     '@public': path.resolve(__dirname, 'public'),
     'yxb-ui': path.resolve(__dirname, '../../'),
   },
-  enhanceAppFiles: path.resolve(__dirname, 'client.js'),
+  enhanceAppFiles: path.resolve(__dirname, 'theme/client.js'),
   markdown:{
     extendMarkdown: (md) => {
       mdPlugin(md)
