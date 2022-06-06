@@ -1,14 +1,20 @@
 <template>
     <div>
-        <p text="sm" v-html="decodedDescription" />
-        <component :is="demo" v-if="formatPathDemos" v-bind="$attrs" />
-        <div v-html="decoded"></div>
+        <ClientOnly>
+            <p text="sm" v-html="decodedDescription" />
+            <div class="example">
+                <Example :file="path" :demo="formatPathDemos[path]" />
+            </div>
+            <div v-html="decoded"></div>
+        </ClientOnly>
     </div>
 </template>
 <script>
+import Example from './demo/example'
 import demos from "@src/examples"
 export default {
     name: 'Demo',
+    components:{Example},
     props:{
         source: {
             type: String,
@@ -35,14 +41,12 @@ export default {
         return {
             decodedDescription:null,
             decoded: null,
-            demo:null,
             formatPathDemos:demos
         }
     },
     mounted(){
         this.decoded = decodeURIComponent(this.source)
         this.decodedDescription = decodeURIComponent(this.description)
-        this.demo=this.formatPathDemos[this.path]
     }
 }
 </script>
