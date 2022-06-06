@@ -6,7 +6,7 @@
     </div>
 </template>
 <script>
-import { computed } from 'vue'
+import demos from "@src/examples"
 export default {
     name: 'Demo',
     props:{
@@ -42,8 +42,7 @@ export default {
     mounted(){
         this.decoded = decodeURIComponent(this.source)
         this.decodedDescription = decodeURIComponent(this.description)
-
-        this.formatPathDemos=this.$demos
+        this.formatPathDemos=demos
         this.demo=this.formatPathDemos[this.path]
     }
 }
