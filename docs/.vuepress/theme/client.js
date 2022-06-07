@@ -1,4 +1,5 @@
 import YXBUI from "yxb-ui/src"
+import Demo from "./global-components/Demo"
 import "yxb-ui/lib/styles/index.css"
 import "./styles/css/app.scss"
 export default ({
@@ -11,4 +12,5 @@ export default ({
   console.log(router)
   console.log(siteData)
   Vue.use(YXBUI)
+  Vue.use(Demo)
 }
