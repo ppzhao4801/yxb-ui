@@ -7,10 +7,14 @@
                 <YxbDivider class="m-0" />
                 <div class="op-btns">
                     <YxbTooltip content="复制代码" :visible-arrow="false">
-                        <YxbIcon name="copy-document" :size="16" class="op-btn" />
+                        <div @click="copyCode">
+                          <YxbIcon name="copy-document" :size="16" class="op-btn" />
+                        </div>
                     </YxbTooltip>
-                    <YxbTooltip content="查看源代码" :visible-arrow="false">
-                        <YxbIcon name="s-tools" :size="16" class="op-btn" />
+                    <YxbTooltip content="查看源代码" :visible-arrow="false" >
+                        <div @click="toggleSourceVisible(true)" >
+                          <YxbIcon name="s-tools" :size="16" class="op-btn"/>
+                        </div>
                     </YxbTooltip>
                 </div>
                 <YxbCollapseTransition>
@@ -30,9 +34,12 @@
 import Example from '../components/demo/example.vue'
 import SourceCode from '../components/demo/source-code.vue'
 import demos from "@src/examples"
+import Button from '../../../../src/components/button/src/button.vue'
+import { useClipboard } from '@vueuse/core'
+// const [sourceVisible, toggleSourceVisible] = useToggle()
 export default {
     name: 'Demo',
-    components:{Example,SourceCode},
+    components:{Example,SourceCode, Button},
     props:{
         description:{
             type: String,
@@ -53,11 +60,34 @@ export default {
     },
     data() {
         return {
-            sourceVisible:true,
+            sourceVisible:false,
             formatPathDemos:demos
         }
     },
     mounted(){
+      
+    },
+    methods:{
+      toggleSourceVisible(flag){
+        this.sourceVisible=flag
+      },
+      copyCode(){
+        const { copy, isSupported } = useClipboard({
+          source: decodeURIComponent(this.rawSource)
+        })
+        if (!isSupported) {
+          console.log("复制失败")
+        }
+        this.$nextTick(async ()=>{
+          try {
+            await copy()
+            console.log("复制成功")
+          } catch (e) {
+            console.log("复制失败",e)
+          }
+        })
+
+      }
     }
 }
 </script>
@@ -70,12 +100,10 @@ export default {
   border-radius: 4px;
 
   .op-btns {
-    padding: 0.5rem;
+    padding: 0.8rem 0.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 2.5rem;
-
     .el-icon {
       &:hover {
         color: #303133;

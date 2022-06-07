@@ -15,6 +15,7 @@
     "prism-theme-vars": "^0.2.3"
   },
   "devDependencies": {
+    "@vue/composition-api": "^1.6.2",
     "consola": "^2.15.3",
     "escape-html": "^1.0.3",
     "markdown-it": "^13.0.1",

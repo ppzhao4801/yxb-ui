@@ -32,5 +32,18 @@ module.exports={
     }
   },
   plugins:[
-  ]
+  ],
+  configureWebpack:{
+    module:{
+      rules:[
+        {
+          test:/\.mjs$/,
+          include: /node_modules/,
+          type: "javascript/auto"
+      }
+    ]
+  }},
+  chainWebpack: (config, isServer) => {
+    // config 是 ChainableConfig 的一个实例
+  }
 }
