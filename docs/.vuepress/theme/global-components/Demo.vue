@@ -12,7 +12,7 @@
                         </div>
                     </YxbTooltip>
                     <YxbTooltip content="查看源代码" :visible-arrow="false" >
-                        <div @click="toggleSourceVisible(true)" >
+                        <div @click="toggleDark()" >
                           <YxbIcon name="s-tools" :size="16" class="op-btn"/>
                         </div>
                     </YxbTooltip>
@@ -21,7 +21,7 @@
                     <SourceCode v-show="sourceVisible" :source="source" />
                 </YxbCollapseTransition>
                 <Transition name="el-fade-in-linear">
-                    <div v-show="sourceVisible" class="example-float-control" @click="toggleSourceVisible(false)">
+                    <div v-show="sourceVisible" class="example-float-control" @click="toggleDark(false)">
                         <YxbIcon name="caret-top" :size="16"/>
                         <span>隐藏源代码</span>
                     </div>
@@ -36,7 +36,6 @@ import SourceCode from '../components/demo/source-code.vue'
 import demos from "@src/examples"
 import Button from '../../../../src/components/button/src/button.vue'
 import { useClipboard } from '@vueuse/core'
-// const [sourceVisible, toggleSourceVisible] = useToggle()
 export default {
     name: 'Demo',
     components:{Example,SourceCode, Button},
@@ -64,28 +63,24 @@ export default {
             formatPathDemos:demos
         }
     },
-    mounted(){
-      
-    },
     methods:{
-      toggleSourceVisible(flag){
-        this.sourceVisible=flag
+      toggleDark(flag){
+        this.sourceVisible=flag===undefined?(!this.sourceVisible):flag
       },
-      copyCode(){
+      async copyCode(){
         const { copy, isSupported } = useClipboard({
           source: decodeURIComponent(this.rawSource)
         })
         if (!isSupported) {
-          console.log("复制失败")
+          console.log("不支持复制")
+          return false
         }
-        this.$nextTick(async ()=>{
-          try {
-            await copy()
-            console.log("复制成功")
-          } catch (e) {
-            console.log("复制失败",e)
-          }
-        })
+        try {
+          await copy()
+          console.log("复制成功")
+        } catch (e) {
+          console.log("复制失败",e)
+        }
 
       }
     }
