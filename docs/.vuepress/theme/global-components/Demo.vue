@@ -62,9 +62,12 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+.m-0{
+  margin: 0;
+}
 .example {
-  border: 1px solid var(--border-color);
-  border-radius: var(--el-border-radius-base);
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
 
   .op-btns {
     padding: 0.5rem;
@@ -75,22 +78,22 @@ export default {
 
     .el-icon {
       &:hover {
-        color: var(--text-color);
+        color: #303133;
       }
     }
 
     .op-btn {
       margin: 0 0.5rem;
       cursor: pointer;
-      color: var(--text-color-lighter);
+      color: #909399;
       transition: 0.2s;
 
       &.github a {
         transition: 0.2s;
-        color: var(--text-color-lighter);
+        color: #909399;
 
         &:hover {
-          color: var(--text-color);
+          color: #303133;
         }
       }
     }
@@ -100,14 +103,14 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid #dcdfe6;
     height: 44px;
     box-sizing: border-box;
-    background-color: var(--bg-color, #fff);
+    background-color: #ffffff;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     margin-top: -1px;
-    color: var(--el-text-color-secondary);
+    color: #909399;
     cursor: pointer;
     position: sticky;
     left: 0;
@@ -120,7 +123,7 @@ export default {
     }
 
     &:hover {
-      color: var(--el-color-primary);
+      color: #409eff;
     }
   }
 }
