@@ -31,14 +31,13 @@
     </div>
 </template>
 <script>
-import Example from '../components/demo/example.vue'
-import SourceCode from '../components/demo/source-code.vue'
+import Example from './example.vue'
+import SourceCode from './source-code.vue'
 import demos from "@src/examples"
-import Button from '../../../../src/components/button/src/button.vue'
 import { useClipboard } from '@vueuse/core'
 export default {
     name: 'Demo',
-    components:{Example,SourceCode, Button},
+    components:{Example,SourceCode},
     props:{
         description:{
             type: String,
