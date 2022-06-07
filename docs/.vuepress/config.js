@@ -38,12 +38,12 @@ module.exports={
       rules:[
         {
           test:/\.mjs$/,
-          include: /node_modules/,
+          include: [path.resolve(__dirname, "../node_modules/@vueuse")],
           type: "javascript/auto"
-      }
-    ]
+      }]
   }},
   chainWebpack: (config, isServer) => {
     // config 是 ChainableConfig 的一个实例
+
   }
 }

@@ -10,7 +10,6 @@ module.exports = function(md){
     validate(params) {
       return !!params.trim().match(/^demo\s*(.*)$/)
     },
-
     render(tokens, idx) {
       const m = tokens[idx].info.trim().match(/^demo\s*(.*)$/)
       if (tokens[idx].nesting === 1 /* means the tag is opening */) {

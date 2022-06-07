@@ -49,10 +49,8 @@ module.exports = function (str, lang){
     }
   }
   if (prism.languages[lang]) {
-    debugger
     const code = prism.highlight(str, prism.languages[lang], lang)
     return wrap(code, rawLang)
   }
-  debugger
   return wrap(str, 'text')
 }
