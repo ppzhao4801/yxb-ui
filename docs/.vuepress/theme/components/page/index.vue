@@ -16,7 +16,7 @@
 <script>
 import PageNav from '@vuepress/theme-default/components/PageNav.vue'
 import SidebarRight from './SidebarRight.vue'
-import { resolveSidebarItems } from '@theme/utils/index'
+// import { resolveSidebarItems } from '@theme/utils/index'
 export default {
   components: { PageNav,SidebarRight },
   props: ['sidebarItems'],
