@@ -22,7 +22,8 @@ module.exports={
   },
   alias: {
     '@src': path.resolve(__dirname, '../'),
-    '@public': path.resolve(__dirname, 'public'),
+    '@public': path.resolve(__dirname, './public'),
+    '@theme':path.resolve(__dirname,'./theme'),
     'yxb-ui': path.resolve(__dirname, '../../'),
   },
   enhanceAppFiles: path.resolve(__dirname, 'theme/client.js'),

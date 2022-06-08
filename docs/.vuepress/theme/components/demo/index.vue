@@ -94,7 +94,7 @@ export default {
   border-radius: 4px;
 
   .op-btns {
-    padding: 0.8rem 0.5rem;
+    padding: 0.4rem 0.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
