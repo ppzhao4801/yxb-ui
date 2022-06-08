@@ -5,17 +5,15 @@ module.exports={
         {
             title: 'Basic 基础组件',   // 必要的
             collapsable: false, // 可选的, 默认值是 true,
-            sidebarDepth: 1,    // 可选的, 默认值是 1 显示h2
+            sidebarDepth: 0,    // 可选的, 默认值是 1 显示h2   默认值是 1 0表示不显示
             initialOpenGroupIndex: 0, // 可选的, 默认值是 0
             children: [
                 {
                     title: 'Button 按钮',   // 必要的
-                    sidebarDepth: 0,    // 可选的, 默认值是 1 0表示不显示
                     path:"/pages/component/button"
                 },
                 {
                     title: 'Border 边框',   // 必要的
-                    sidebarDepth: 0,    // 可选的, 默认值是 1 0表示不显示
                     path:"/pages/component/alert"
                 }
             ]
@@ -23,7 +21,7 @@ module.exports={
         {
             title: 'Form 表单组件',   // 必要的
             collapsable: false, // 可选的, 默认值是 true,
-            sidebarDepth: 1,    // 可选的, 默认值是 1
+            sidebarDepth: 0,    // 可选的, 默认值是 1
             children: [
             ]
         }
@@ -34,20 +32,13 @@ module.exports={
             title: '设计',   // 必要的
             collapsable: false, // 可选的, 默认值是 true,
             sidebarDepth: 1,    // 可选的, 默认值是 1 显示h2
-            children: [
-                {
-                    title: '设计描述',   // 必要的
-                    sidebarDepth: 0,    // 可选的, 默认值是 1 0表示不显示
-                    path:"/pages/guide/design"
-                }
-            ]
+            path:"/pages/guide/design"
         },
         {
             title: 'Form 表单组件',   // 必要的
             collapsable: false, // 可选的, 默认值是 true,
             sidebarDepth: 1,    // 可选的, 默认值是 1
-            children: [
-            ]
+            path:"/pages/component/button"
         }
     ]
 
