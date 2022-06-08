@@ -2,7 +2,7 @@
   <main class="page-content has-sidebar">
     <div class="doc-content-wrapper">
       <div class="doc-content-container">
-        <div class="doc-content">
+        <div style="position:relative;" class="doc-content">
           <Content  />
           <PageNav v-bind="{ sidebarItems }" />
         </div>

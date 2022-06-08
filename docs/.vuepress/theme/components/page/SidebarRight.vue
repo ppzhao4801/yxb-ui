@@ -17,7 +17,8 @@
   </aside>
 </template>
 <script>
-import { groupHeaders } from '../../utils/index'
+import { groupHeaders } from '@theme/utils/index'
+import { useActiveSidebarLinks } from '@theme/utils/active-bar'
 export default {
     name: 'SidebarRight',
     data(){
@@ -32,6 +33,9 @@ export default {
     },
     mounted(){
       this.initHeaders(this.$page)
+      const container=this.$refs.container
+      const marker=this.$refs.marker
+      useActiveSidebarLinks(container, marker)
     },
     methods:{
       initHeaders(page){

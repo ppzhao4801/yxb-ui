@@ -1,8 +1,8 @@
 import YXBUI from "yxb-ui/src"
-import Demo from "./components/demo"
+import Demo from "@theme/components/demo"
 import "yxb-ui/lib/styles/index.css"
-import "./styles/css/css-vars.scss"
-import "./styles/css/app.scss"
+import "@theme/styles/css/css-vars.scss"
+import "@theme/styles/css/app.scss"
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
   options, // 附加到根实例的一些选项
