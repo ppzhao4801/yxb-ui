@@ -2,10 +2,12 @@
 title: alert
 lang: en-US
 ---
+# Alert
 
-# alert
+Commonly used button.
 
-Commonly used alert.
+## alert usage2-1
+
 :::demo Use `type`, `plain`, `round` and `circle` to define Button's style.
 
 button/basic
@@ -17,3 +19,8 @@ button/basic
 guide/basic
 
 :::
+
+
+## alert usage2-2
+
+### alert usage3
