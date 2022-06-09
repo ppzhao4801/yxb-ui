@@ -9,6 +9,10 @@
   .doc-content-container {
     .doc-content {
       width: 100%;
+      h2,h3{
+        margin-top: -60px;
+        padding-top: 70px;
+      }
     }
 
     @include respond-to('xxl') {

@@ -1,8 +1,8 @@
 <template>
   <main :class="{ 'page-content': true, 'has-sidebar': true }">
-    <div class="doc-content-wrapper">
+    <div class="doc-content-wrapper" style="position:relative;">
       <div class="doc-content-container">
-        <div style="position:relative;" class="doc-content">
+        <div class="doc-content">
           <Content  />
           <PageNav v-bind="{ sidebarItems }" />
         </div>
