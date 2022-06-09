@@ -1,6 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-var Components = require('./components.json');
+var Components = require('./data.json');
 Components = Object.keys(Components);
 
 Components.forEach(function(key) {

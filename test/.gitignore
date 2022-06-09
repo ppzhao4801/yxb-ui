@@ -1,1 +1,2 @@
-components
+components/components/*
+components/components.json
