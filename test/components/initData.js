@@ -3,7 +3,11 @@ var path = require('path');
 var Components = require('./data.json');
 Components = Object.keys(Components);
 
+const exclusives=["button","message","message-box","notification"]
 Components.forEach(function(key) {
+    if(exclusives.indexOf(key)>-1){
+      return false
+    }
     var filePath = path.resolve(__dirname, `dict/components/${key}`);
     if(!fs.existsSync(filePath)){
       fs.mkdirSync(filePath)
@@ -19,6 +23,5 @@ Components.forEach(function(key) {
     }
     const content = `import ${upperCaseKey} from "element-ui/lib/${key}";\n${upperCaseKey}.name="Yxb${upperCaseKey}"\nexport default ${upperCaseKey};`;
     var paths=path.resolve(filePath,'index.js')
-    console.log(paths)
     fs.writeFileSync(path.resolve(filePath,'index.js'), content, 'utf8');
 });
