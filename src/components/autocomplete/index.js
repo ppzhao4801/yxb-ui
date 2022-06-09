@@ -1,3 +1,3 @@
 import Autocomplete from 'element-ui/lib/autocomplete';
-Autocomplete.name="YxbInput"
+Autocomplete.name="YxbAutocomplete"
 export default Autocomplete;

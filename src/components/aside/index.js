@@ -1,3 +1,3 @@
 import Aside from 'element-ui/lib/aside';
-Aside.name="YxbInput"
+Aside.name="YxbAside"
 export default Aside;
