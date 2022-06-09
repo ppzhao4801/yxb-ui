@@ -1,3 +1,3 @@
-import CheckboxBroup from 'element-ui/lib/checkbox-group';
-CheckboxBroup.name="YxbCheckboxBroup"
-export default CheckboxBroup;
+import CheckboxGroup from "element-ui/lib/checkbox-group";
+CheckboxGroup.name="YxbCheckboxGroup"
+export default CheckboxGroup;
