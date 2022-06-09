@@ -2,14 +2,14 @@
 
 .toc-wrapper {
   display: none;
-  padding-left: 64px;
+  padding-left: 35px;
   .toc-content {
     position: sticky;
     top: calc(var(--header-height) + 32px);
     margin-top: 0;
     padding: 4px 8px 4px 12px;
     margin-bottom: 32px;
-    width: 200px;
+    //width: 200px;
     ul,li{
       line-height: normal;
     }
