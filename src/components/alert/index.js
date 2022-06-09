@@ -1,8 +1,3 @@
-import Alert from './src/main';
-
-/* istanbul ignore next */
-Alert.install = function(Vue) {
-  Vue.component(Alert.name, Alert);
-};
-
+import Alert from "element-ui/lib/alert";
+Alert.name="YxbAlert"
 export default Alert;
