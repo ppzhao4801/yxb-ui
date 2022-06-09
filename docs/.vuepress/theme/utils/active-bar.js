@@ -105,7 +105,7 @@ function getPageOffset() {
 function getAnchorTop(anchor) {
   const pageOffset = getPageOffset()
   try {
-    return anchor.parentElement && anchor.parentElement.offsetTop - pageOffset + 70
+    return anchor.parentElement && anchor.parentElement.offsetTop - pageOffset + 100
   } catch {
     return 0
   }
