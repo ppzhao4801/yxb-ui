@@ -3,7 +3,7 @@ var path = require('path');
 var Components = require('./data.json');
 Components = Object.keys(Components);
 
-const exclusives=["button"]
+const exclusives=["button","collapse-transition"]
 const notNames = ["message","message-box","notification"]
 Components.forEach(function(key) {
     if(exclusives.indexOf(key)>-1){
