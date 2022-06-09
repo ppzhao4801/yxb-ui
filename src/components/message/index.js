@@ -1,3 +1,2 @@
-import Message from "element-ui/lib/message";
-Message.name="YxbMessage"
+import Message from "element-ui/packages/message";
 export default Message;

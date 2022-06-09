@@ -1,3 +1,2 @@
-import MessageBox from "element-ui/lib/message-box";
-MessageBox.name="YxbMessageBox"
+import MessageBox from "element-ui/packages/message-box";
 export default MessageBox;

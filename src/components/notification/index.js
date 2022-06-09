@@ -1,3 +1,2 @@
-import Notification from "element-ui/lib/notification";
-Notification.name="YxbNotification"
+import Notification from "element-ui/packages/notification";
 export default Notification;
