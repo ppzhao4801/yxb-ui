@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="../../lib/styles/index.css">
+</head>
+<body>
+  <div id="app">
+    <el-button @click="visible = true">el-Button</el-button>
+    <el-dialog :visible.sync="visible" title="Hello world">
+      <p>el-Try Element</p>
+    </el-dialog>
+	
+	 <yxb-button @click="visible = true">Button</yxb-button>
+    <yxb-dialog :visible.sync="visible" title="Hello world">
+      <p>Try Element</p>
+    </yxb-dialog>
+  </div>
+</body>
+  <!-- import Vue before Element -->
+  <script src="./vue.min.js"></script>
+  <!-- import JavaScript -->
+  <script src="../../lib/index.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { visible: false }
+      }
+    })
+  </script>
+</html>
