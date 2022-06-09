@@ -1,3 +1,3 @@
-import input from 'element-ui/lib/input';
-input.name="YxbInput"
-export default input;
+import Input from 'element-ui/lib/input';
+Input.name="YxbInput"
+export default Input;

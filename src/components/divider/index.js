@@ -1,3 +1,3 @@
-import divider from 'element-ui/lib/divider';
-divider.name="YxbDivider"
-export default divider;
+import Divider from 'element-ui/lib/divider';
+Divider.name="YxbDivider"
+export default Divider;
