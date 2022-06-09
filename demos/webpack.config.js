@@ -17,7 +17,6 @@ const webpackConfig = {
     extensions: ['.js', '.vue', '.json', '.css'],
     alias: {
       src: path.resolve(__dirname, '../src'),
-      examples: path.resolve(__dirname, './examples/src'),
       'yxb-ui': path.resolve(__dirname, '../')
     },
     modules: ['node_modules']
