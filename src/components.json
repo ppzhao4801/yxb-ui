@@ -86,5 +86,6 @@
 	"empty" : "src/components/empty/index.js",
 	"descriptions" : "src/components/descriptions/index.js",
 	"descriptions-item" : "src/components/descriptions-item/index.js",
-	"result" : "src/components/result/index.js"
+	"result" : "src/components/result/index.js",
+	"collapse-transition" : "src/components/collapse-transition/index.js"
 }

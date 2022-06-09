@@ -4,7 +4,7 @@ var Components = require('./data.json');
 Components = Object.keys(Components);
 
 Components.forEach(function(key) {
-    var filePath = path.resolve(__dirname, `components/${key}`);
+    var filePath = path.resolve(__dirname, `dict/components/${key}`);
     if(!fs.existsSync(filePath)){
       fs.mkdirSync(filePath)
     }

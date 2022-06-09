@@ -13,4 +13,4 @@ Components.forEach(function(key,index) {
   
 });
 content+="}"
-fs.writeFileSync(path.resolve(__dirname,'components.json'), content, 'utf8');
+fs.writeFileSync(path.resolve(__dirname,'dict/components.json'), content, 'utf8');
