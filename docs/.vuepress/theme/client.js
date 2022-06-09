@@ -1,5 +1,6 @@
 import YXBUI from "yxb-ui/src"
 import Demo from "@theme/components/demo"
+import "normalize.css"
 import "yxb-ui/lib/styles/index.css"
 import "@theme/styles/css/css-vars.scss"
 import "@theme/styles/css/app.scss"
