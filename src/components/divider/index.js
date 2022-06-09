@@ -1,3 +1,3 @@
-import ElDivider from 'element-ui/lib/divider';
-ElDivider.name="YxbDivider"
-export default ElDivider;
+import divider from 'element-ui/lib/divider';
+divider.name="YxbDivider"
+export default divider;
