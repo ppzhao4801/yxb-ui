@@ -5,6 +5,8 @@ Components = Object.keys(Components);
 
 const exclusives=["button","collapse-transition"]
 const notNames = ["message","message-box","notification"]
+const libs = ["tree","tabs","menu","slider","descriptions","table","avatar","pagination","cascader-panel","tooltip",
+"transfer","form","dropdown","upload","timeline","tag","scrollbar","calendar"]
 Components.forEach(function(key) {
     if(exclusives.indexOf(key)>-1){
       return false
@@ -23,10 +25,11 @@ Components.forEach(function(key) {
       upperCaseKey=key.slice(0,1).toUpperCase() + key.slice(1)
     }
     let content;
+    const libKey=libs.indexOf(key)>-1?"lib":"packages"
     if(notNames.indexOf(key)>-1){
-      content = `import ${upperCaseKey} from "element-ui/lib/${key}";\nexport default ${upperCaseKey};`;
+      content = `import ${upperCaseKey} from "element-ui/${libKey}/${key}";\nexport default ${upperCaseKey};`;
     }else{
-      content = `import ${upperCaseKey} from "element-ui/lib/${key}";\n${upperCaseKey}.name="Yxb${upperCaseKey}"\nexport default ${upperCaseKey};`;
+      content = `import ${upperCaseKey} from "element-ui/${libKey}/${key}";\n${upperCaseKey}.name="Yxb${upperCaseKey}"\nexport default ${upperCaseKey};`;
     }
     
     var paths=path.resolve(filePath,'index.js')
