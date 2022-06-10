@@ -5,8 +5,7 @@ Components = Object.keys(Components);
 
 const exclusives=["button","collapse-transition"]
 const notNames = ["message","message-box","notification"]
-const libs = ["tree","tabs","menu","slider","descriptions","table","avatar","pagination","cascader-panel","tooltip",
-"transfer","form","dropdown","upload","timeline","tag","scrollbar","calendar"]
+const libs = []
 Components.forEach(function(key) {
     if(exclusives.indexOf(key)>-1){
       return false
