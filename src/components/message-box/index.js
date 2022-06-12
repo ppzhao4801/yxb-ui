@@ -1,2 +1,2 @@
-import MessageBox from "element-ui/lib/message-box";
+import MessageBox from "element-ui/packages/message-box";
 export default MessageBox;

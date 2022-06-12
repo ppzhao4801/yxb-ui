@@ -1,3 +1,3 @@
-import InfiniteScroll from "element-ui/lib/infinite-scroll";
+import InfiniteScroll from "element-ui/packages/infinite-scroll";
 InfiniteScroll.name="YxbInfiniteScroll"
 export default InfiniteScroll;

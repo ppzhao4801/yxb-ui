@@ -1,3 +1,3 @@
-import DropdownMenu from "element-ui/lib/dropdown-menu";
+import DropdownMenu from "element-ui/packages/dropdown-menu";
 DropdownMenu.name="YxbDropdownMenu"
 export default DropdownMenu;

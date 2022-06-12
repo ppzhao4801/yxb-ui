@@ -1,3 +1,3 @@
-import Pagination from "element-ui/lib/pagination";
+import Pagination from "element-ui/packages/pagination";
 Pagination.name="YxbPagination"
 export default Pagination;

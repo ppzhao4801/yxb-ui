@@ -1,3 +1,3 @@
-import Select from "element-ui/lib/select";
+import Select from "element-ui/packages/select";
 Select.name="YxbSelect"
 export default Select;

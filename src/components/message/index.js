@@ -1,2 +1,2 @@
-import Message from "element-ui/lib/message";
+import Message from "element-ui/packages/message";
 export default Message;

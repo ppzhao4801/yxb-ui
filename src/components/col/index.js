@@ -1,3 +1,3 @@
-import Col from "element-ui/lib/col";
+import Col from "element-ui/packages/col";
 Col.name="YxbCol"
 export default Col;

@@ -1,3 +1,3 @@
-import TimeSelect from "element-ui/lib/time-select";
+import TimeSelect from "element-ui/packages/time-select";
 TimeSelect.name="YxbTimeSelect"
 export default TimeSelect;

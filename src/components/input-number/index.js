@@ -1,3 +1,3 @@
-import InputNumber from "element-ui/lib/input-number";
+import InputNumber from "element-ui/packages/input-number";
 InputNumber.name="YxbInputNumber"
 export default InputNumber;

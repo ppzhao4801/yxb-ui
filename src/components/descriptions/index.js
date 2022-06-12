@@ -1,3 +1,3 @@
-import Descriptions from "element-ui/lib/descriptions";
+import Descriptions from "element-ui/packages/descriptions";
 Descriptions.name="YxbDescriptions"
 export default Descriptions;

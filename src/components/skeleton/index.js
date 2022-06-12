@@ -1,3 +1,3 @@
-import Skeleton from "element-ui/lib/skeleton";
+import Skeleton from "element-ui/packages/skeleton";
 Skeleton.name="YxbSkeleton"
 export default Skeleton;

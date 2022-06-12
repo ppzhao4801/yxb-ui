@@ -1,3 +1,3 @@
-import Step from "element-ui/lib/step";
+import Step from "element-ui/packages/step";
 Step.name="YxbStep"
 export default Step;

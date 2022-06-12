@@ -1,3 +1,3 @@
-import Main from "element-ui/lib/main";
+import Main from "element-ui/packages/main";
 Main.name="YxbMain"
 export default Main;

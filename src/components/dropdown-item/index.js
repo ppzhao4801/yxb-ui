@@ -1,3 +1,3 @@
-import DropdownItem from "element-ui/lib/dropdown-item";
+import DropdownItem from "element-ui/packages/dropdown-item";
 DropdownItem.name="YxbDropdownItem"
 export default DropdownItem;

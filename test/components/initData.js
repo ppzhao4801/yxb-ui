@@ -26,9 +26,9 @@ Components.forEach(function(key) {
     let content;
     const libKey=libs.indexOf(key)>-1?"lib":"packages"
     if(notNames.indexOf(key)>-1){
-      content = `import ${upperCaseKey} from "element-ui/lib/${key}";\nexport default ${upperCaseKey};`;
+      content = `import ${upperCaseKey} from "element-ui/${libKey}/${key}";\nexport default ${upperCaseKey};`;
     }else{
-      content = `import ${upperCaseKey} from "element-ui/lib/${key}";\n${upperCaseKey}.name="Yxb${upperCaseKey}"\nexport default ${upperCaseKey};`;
+      content = `import ${upperCaseKey} from "element-ui/${libKey}/${key}";\n${upperCaseKey}.name="Yxb${upperCaseKey}"\nexport default ${upperCaseKey};`;
     }
     
     var paths=path.resolve(filePath,'index.js')

@@ -1,3 +1,3 @@
-import TimelineItem from "element-ui/lib/timeline-item";
+import TimelineItem from "element-ui/packages/timeline-item";
 TimelineItem.name="YxbTimelineItem"
 export default TimelineItem;

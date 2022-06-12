@@ -1,3 +1,3 @@
-import CheckboxGroup from "element-ui/lib/checkbox-group";
+import CheckboxGroup from "element-ui/packages/checkbox-group";
 CheckboxGroup.name="YxbCheckboxGroup"
 export default CheckboxGroup;

@@ -1,3 +1,3 @@
-import Option from "element-ui/lib/option";
+import Option from "element-ui/packages/option";
 Option.name="YxbOption"
 export default Option;

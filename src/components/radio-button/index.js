@@ -1,3 +1,3 @@
-import RadioButton from "element-ui/lib/radio-button";
+import RadioButton from "element-ui/packages/radio-button";
 RadioButton.name="YxbRadioButton"
 export default RadioButton;

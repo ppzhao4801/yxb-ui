@@ -1,3 +1,3 @@
-import RadioGroup from "element-ui/lib/radio-group";
+import RadioGroup from "element-ui/packages/radio-group";
 RadioGroup.name="YxbRadioGroup"
 export default RadioGroup;

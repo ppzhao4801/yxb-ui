@@ -1,3 +1,3 @@
-import Dialog from "element-ui/lib/dialog";
+import Dialog from "element-ui/packages/dialog";
 Dialog.name="YxbDialog"
 export default Dialog;

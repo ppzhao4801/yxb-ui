@@ -1,3 +1,3 @@
-import FormItem from "element-ui/lib/form-item";
+import FormItem from "element-ui/packages/form-item";
 FormItem.name="YxbFormItem"
 export default FormItem;

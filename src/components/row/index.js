@@ -1,3 +1,3 @@
-import Row from "element-ui/lib/row";
+import Row from "element-ui/packages/row";
 Row.name="YxbRow"
 export default Row;

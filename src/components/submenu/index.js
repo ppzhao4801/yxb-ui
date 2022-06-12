@@ -1,3 +1,3 @@
-import Submenu from "element-ui/lib/submenu";
+import Submenu from "element-ui/packages/submenu";
 Submenu.name="YxbSubmenu"
 export default Submenu;

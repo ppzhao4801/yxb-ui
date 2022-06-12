@@ -1,3 +1,3 @@
-import Transfer from "element-ui/lib/transfer";
+import Transfer from "element-ui/packages/transfer";
 Transfer.name="YxbTransfer"
 export default Transfer;

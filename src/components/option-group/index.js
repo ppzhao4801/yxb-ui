@@ -1,3 +1,3 @@
-import OptionGroup from "element-ui/lib/option-group";
+import OptionGroup from "element-ui/packages/option-group";
 OptionGroup.name="YxbOptionGroup"
 export default OptionGroup;

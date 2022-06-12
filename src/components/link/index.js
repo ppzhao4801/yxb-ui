@@ -1,3 +1,3 @@
-import Link from "element-ui/lib/link";
+import Link from "element-ui/packages/link";
 Link.name="YxbLink"
 export default Link;

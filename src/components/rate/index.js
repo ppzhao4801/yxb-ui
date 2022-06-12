@@ -1,3 +1,3 @@
-import Rate from "element-ui/lib/rate";
+import Rate from "element-ui/packages/rate";
 Rate.name="YxbRate"
 export default Rate;

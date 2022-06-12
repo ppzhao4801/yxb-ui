@@ -1,3 +1,3 @@
-import ButtonGroup from "element-ui/lib/button-group";
+import ButtonGroup from "element-ui/packages/button-group";
 ButtonGroup.name="YxbButtonGroup"
 export default ButtonGroup;

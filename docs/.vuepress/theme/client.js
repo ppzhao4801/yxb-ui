@@ -1,4 +1,4 @@
-import YXBUI from "yxb-ui/src"
+import YXBUI from "yxb-ui"
 import Demo from "@theme/components/demo"
 import "normalize.css"
 import "yxb-ui/lib/styles/index.css"

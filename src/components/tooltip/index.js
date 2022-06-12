@@ -1,3 +1,3 @@
-import Tooltip from "element-ui/lib/tooltip";
+import Tooltip from "element-ui/packages/tooltip";
 Tooltip.name="YxbTooltip"
 export default Tooltip;

@@ -1,3 +1,3 @@
-import Calendar from "element-ui/lib/calendar";
+import Calendar from "element-ui/packages/calendar";
 Calendar.name="YxbCalendar"
 export default Calendar;

@@ -1,3 +1,3 @@
-import TimePicker from "element-ui/lib/time-picker";
+import TimePicker from "element-ui/packages/time-picker";
 TimePicker.name="YxbTimePicker"
 export default TimePicker;

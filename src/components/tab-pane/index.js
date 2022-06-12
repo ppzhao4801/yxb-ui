@@ -1,3 +1,3 @@
-import TabPane from "element-ui/lib/tab-pane";
+import TabPane from "element-ui/packages/tab-pane";
 TabPane.name="YxbTabPane"
 export default TabPane;

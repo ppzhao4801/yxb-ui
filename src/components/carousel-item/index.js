@@ -1,3 +1,3 @@
-import CarouselItem from "element-ui/lib/carousel-item";
+import CarouselItem from "element-ui/packages/carousel-item";
 CarouselItem.name="YxbCarouselItem"
 export default CarouselItem;
