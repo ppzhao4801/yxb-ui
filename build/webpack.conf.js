@@ -50,7 +50,9 @@ module.exports = {
       {
         test: /\.(jsx?|babel|es6)$/,
         include: process.cwd(),
-        // exclude: config.jsexclude,
+        exclude: (path)=>{
+          return path.indexOf('node_modules')>-1 && path.indexOf('element-ui')< 0
+        },
         loader: 'babel-loader'
       },
       {
