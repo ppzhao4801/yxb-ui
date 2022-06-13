@@ -9,6 +9,10 @@ Object.keys(Components).forEach(function(key) {
   externals[`yxb-ui/src/components/${key}`] = `yxb-ui/lib/components/${key}`;
 });
 
+Object.keys(Components).forEach(function(key) {
+  externals[`element-ui/packages/${key}`] = `element-ui/lib/${key}`;
+});
+
 var utilsList = fs.readdirSync(path.resolve(__dirname, '../src/utils'));
 utilsList.forEach(function(file) {
   file = path.basename(file, '.js');
@@ -20,7 +24,7 @@ externals = [Object.assign({
 }, externals), nodeExternals()];
 
 exports.externals = externals;
-
+debugger
 exports.alias = {
   src: path.resolve(__dirname, '../src'),
   'yxb-ui': path.resolve(__dirname, '../')
