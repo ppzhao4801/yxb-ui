@@ -22,7 +22,7 @@ const webpackConfig = {
     modules: ['node_modules']
   },
   devServer: {
-    host: '0.0.0.0',
+    host: '127.0.0.1',
     port: 8085,
     hot: true
   },
@@ -37,7 +37,9 @@ const webpackConfig = {
       {
         test: /\.(jsx?|babel|es6)$/,
         // include: process.cwd(),
-        // exclude: /node_modules/,
+        exclude: (path)=>{
+          return path.indexOf('node_modules')>-1 && path.indexOf('element-ui')< 0
+        },
         loader: 'babel-loader'
       },
       {
